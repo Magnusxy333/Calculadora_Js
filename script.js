@@ -104,8 +104,8 @@ const calculator = new Calculator(previousOperandTextElement, currentOperandText
 
 numberButtons.forEach(button => {
   button.addEventListener('click', () => {
-    calculator.appendNumber(button.innerText)
-    calculator.updateDisplay()
+    calculator.appendNumber(button.innerText) // calculator: É uma Instância da classe (ou simplesmente um Objeto).
+    calculator.updateDisplay() //.appendNumber e .updateDisplay: São Chamadas de Método.
   })
 })
 
